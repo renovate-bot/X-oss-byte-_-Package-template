@@ -12,7 +12,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Checkout repository
-              uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608 # v4.1.0
+              uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
             - name: Add TypeScript problem matcher
               run: echo "::add-matcher::.github/problemMatchers/tsc.json"
             - name: Use Node.js v18
@@ -28,7 +28,7 @@ jobs:
             - name: Generate Docs
               run: yarn docs
             - name: Deploy 🚀
-              uses: JamesIves/github-pages-deploy-action@a1ea191d508feb8485aceba848389d49f80ca2dc # v4.4.3
+              uses: JamesIves/github-pages-deploy-action@881db5376404c5c8d621010bcbec0310b58d5e29 # v4.6.8
               with:
                   branch: gh-pages
                   folder: docs
